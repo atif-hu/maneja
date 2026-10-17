@@ -1,0 +1,449 @@
+{
+  "test_cases": 5,
+  "timestamp": "2026-09-29",
+  "scores": [
+    {
+      "brand_id": "test-001-fitness",
+      "brand_name": "FitFlow",
+      "overall_score": 0.7835,
+      "set_quality_avg": 0.7558333333333334,
+      "diversity_score": 1.0,
+      "approval_alignment": 0.6499999999999999,
+      "summary": "Quality: 76% | Diversity: 100% | Approval align: 65%\nDiversity: Good diversity across concepts\nApproval: Aligns with 3/3 approval themes; May repeat rejection theme: too posed and fake, not authentic",
+      "generated_concepts": [
+        {
+          "headline": "5 Minutes Before Sunrise",
+          "rationale": "Directly reflects the approved 'Morning energy boost' post that reviewers praised for natural light and authenticity. Showcases the Quick Workouts pillar and FitFlow Premium's personalized sessions, appealing to time-pressed professionals who want efficient movement before their day starts.",
+          "prompt": "A diverse, real-looking professional in their early 30s does a quick bodyweight workout in a bright, minimal living room at sunrise. Soft golden natural light streams through a window, casting long shadows. They're mid-lunge, genuine effort visible, light sweat, hair slightly messy, wearing simple green and orange athletic wear. A smartphone propped nearby shows the FitFlow app interface. Uncluttered space, one yoga mat, no extra props. Photography style is candid and energetic, not posed, capturing authentic motion blur in the limbs. Color palette leans into brand greens, oranges, whites, and dark charcoal accents. Composition is airy and modern, no gym equipment, no filters.",
+          "content_pillar": "Quick Workouts",
+          "product": "FitFlow Premium"
+        },
+        {
+          "headline": "Real Food, Real Fast",
+          "rationale": "Introduces the Nutrition Tips pillar with a fresh, practical angle distinct from the workout concepts, tying directly to the Nutrition Guide ebook. Avoids cheesy gym clich\u00e9s by focusing on an everyday kitchen moment, matching audience interests in nutrition and productivity.",
+          "prompt": "Overhead shot of a clean, minimalist kitchen counter where a busy professional in casual clothes is assembling a simple, colorful meal-prep bowl: grilled chicken, leafy greens, roasted vegetables, and a scoop of grains. Morning natural light floods the scene from a nearby window. Only a few essential items are visible: cutting board, one knife, a glass of water, and a tablet showing the FitFlow Nutrition Guide ebook cover. No clutter, no excess props. Hands are mid-motion, plating food naturally, not staged. Color palette incorporates fresh greens, warm oranges, and crisp whites against a neutral countertop. The mood feels practical, energizing, and unpretentious.",
+          "content_pillar": "Nutrition Tips",
+          "product": "Nutrition Guide"
+        },
+        {
+          "headline": "Still Mind, Strong Start",
+          "rationale": "Builds on the approved 'Meditation in nature' post, which reviewers called peaceful and on-brand. Expands the Mindfulness pillar into a workplace-adjacent setting to resonate with busy professionals seeking mental wellness during their day, reinforcing brand inclusivity and calm energy.",
+          "prompt": "A professional in comfortable casual clothing sits cross-legged on a rooftop terrace or quiet park bench during a mid-morning break, eyes closed, hands resting gently on knees in a natural meditation pose. Soft, bright daylight illuminates the scene with subtle greenery in the background, city skyline softly blurred beyond. The person looks genuinely relaxed, not overly posed, with authentic expression and natural skin texture, representing diverse body types and ages. Minimal props: just a water bottle and a folded jacket beside them. Color grading favors natural tones accented by brand green and orange in clothing details. The overall mood is calm, grounded, and quietly energizing, free of clutter or artificial filters.",
+          "content_pillar": "Mindfulness",
+          "product": ""
+        }
+      ],
+      "golden_concepts": [
+        {
+          "headline": "Morning movement ritual",
+          "rationale": "Shows authentic morning routine with real person, aligns with 'Quick Workouts' pillar and audience's desire for achievable routines",
+          "prompt": "Create an energetic social media image of a person doing a morning stretch routine in a bright, minimalist home space. Natural sunlight streaming through large windows. The person looks focused but relaxed, wearing simple athletic wear in green or orange tones. Show real effort and movement, not posed stillness. Minimalist background with white walls, wooden floor, single potted plant. Capture the transition from sleep to energy. Bright, clean composition with high contrast. No text overlay.",
+          "content_pillar": "Quick Workouts",
+          "product": ""
+        },
+        {
+          "headline": "Nutrition truth: meal prep reality",
+          "rationale": "Addresses practical wellness with 'Nutrition Tips' pillar; real food (not Instagram-perfect), relatable to busy professionals",
+          "prompt": "Create an authentic social media image showing real meal prep in a modern kitchen. A person's hands arranging simple, healthy foods into containers: grilled chicken, rice, roasted vegetables in earth tones. Natural daylight. The scene feels practical and lived-in, not styled for magazines. Include fresh ingredients nearby (lime, herbs). Minimalist kitchen with white counters and natural wood. Emphasize simplicity and achievability over perfection. Bright, warm lighting. No text overlay.",
+          "content_pillar": "Nutrition Tips",
+          "product": "Nutrition Guide"
+        },
+        {
+          "headline": "Mindful pause moment",
+          "rationale": "Showcases 'Mindfulness' pillar with peaceful, inclusive imagery; contrasts with active workout content for diversity",
+          "prompt": "Create a serene social media image of a person sitting cross-legged in a calm indoor space during meditation. Soft natural light, minimal distractions. They wear simple, comfortable clothing in neutral or soft colors. Perhaps a window view showing nature outside. Very subtle props: a small plant, a water bottle, a journal. The atmosphere is peaceful but grounded, not overly spiritual or ethereal. Clean, warm tones. Could show early morning or late afternoon light. No text overlay.",
+          "content_pillar": "Mindfulness",
+          "product": ""
+        }
+      ],
+      "concept_scores": [
+        {
+          "index": 0,
+          "overall": 0.7949999999999999,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.7749999999999999,
+          "brand_faithfulness": 0.7,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Specificity: 50%, 103 words | Brand: Respects brand identity and guidelines"
+        },
+        {
+          "index": 1,
+          "overall": 0.6799999999999999,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.3,
+          "brand_faithfulness": 0.6,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Contains non-image-generation requests (text, lists, explanations) | Brand: Uses visual elements brand wants to avoid"
+        },
+        {
+          "index": 2,
+          "overall": 0.7925,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.8624999999999999,
+          "brand_faithfulness": 0.6,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Specificity: 75%, 111 words | Brand: Describes photography that conflicts with brand style"
+        }
+      ]
+    },
+    {
+      "brand_id": "test-002-eco",
+      "brand_name": "EcoHome",
+      "overall_score": 0.7573333333333333,
+      "set_quality_avg": 0.7233333333333333,
+      "diversity_score": 0.9666666666666667,
+      "approval_alignment": 0.6499999999999999,
+      "summary": "Quality: 72% | Diversity: 97% | Approval align: 65%\nDiversity: Good diversity across concepts\nApproval: Aligns with 2/2 approval themes; May repeat rejection theme: too sterile and product-focused, not lifestyle",
+      "generated_concepts": [
+        {
+          "headline": "Sunday Morning with the Bamboo Kitchen Set",
+          "rationale": "Mirrors the approved 'Bamboo kitchen transformation' post that reviewers praised for feeling warm and lived-in. Shows the product in genuine daily use rather than a sterile shot, reinforcing authenticity and educational storytelling about where the bamboo comes from and how it's used.",
+          "prompt": "A sunlit Portland kitchen on a slow Sunday morning. A woman in her early 30s, wearing a linen apron, stands at a wood butcher-block counter using bamboo utensils and stacked bamboo storage containers to prep fresh vegetables. Soft, diffused morning light streams through a window framed by trailing pothos plants. Sage green cabinetry, cream tile backsplash, warm oak shelving with ceramic jars in the background. Steam rises gently from a kettle. The mood is calm, unhurried, and genuine \u2014 slightly imperfect countertop clutter like a linen towel and citrus peels, avoiding sterile staging. Textures are tactile: woodgrain, linen, ceramic. Warm, natural, editorial lifestyle photography style.",
+          "content_pillar": "Product Stories",
+          "product": "Bamboo Kitchen Set"
+        },
+        {
+          "headline": "Waking Up Slower: A Linen Morning Ritual",
+          "rationale": "Directly addresses the rejection of the 'Linen bedding flat lay' concept, which reviewers found too sterile and product-focused. This reframes Linen Bedding within a real, emotional lifestyle moment rather than a product-only shot, aligning with brand preference for real homes and people enjoying sustainable products.",
+          "prompt": "A softly lit bedroom in a real Portland home, early morning. A person in their late 20s stretches while sitting up in bed, wrapped in wrinkled organic linen sheets in warm cream and sage tones, sunlight filtering through sheer curtains and casting gentle shadows. A cup of tea rests on a wooden nightstand beside a small potted fern. Rumpled pillows, natural fiber rug, and a woven throw add lived-in texture. The scene feels candid and unposed \u2014 imperfect folds in the linen, soft focus, warm color grading. No visible logos or staged product arrangement; the bedding is experienced, not displayed. Photography style: warm, natural, intimate lifestyle documentary feel.",
+          "content_pillar": "Home Inspiration",
+          "product": "Linen Bedding"
+        },
+        {
+          "headline": "From Clutter to Calm: A Zero-Waste Pantry Transformation",
+          "rationale": "Builds on the approved 'Zero-waste bathroom setup' post, which reviewers called beautiful and practical, by applying the same before/after transformation format to the kitchen using the Refill Station Bundle. Supports the Sustainable Living pillar with an educational, aspirational visual that avoids greenwashing by showing tangible, real change.",
+          "prompt": "A side-by-side style single scene split by soft natural framing: on the left, a cluttered pantry shelf with mismatched plastic packaging in dim light; on the right, the same shelf transformed with labeled glass refill containers from the Refill Station Bundle, holding grains, pasta, and pantry staples, bathed in warm diffused daylight. Sage green label accents, cream linen napkins folded neatly nearby, a small potted herb on the shelf edge. The transformation feels achievable and authentic, not overly polished \u2014 slight imperfections like uneven jar heights remain. Warm wood shelving, soft shadows, natural materials throughout. Educational, inspiring, realistic home photography style, no harsh lighting or plastic clutter.",
+          "content_pillar": "Sustainable Living",
+          "product": "Refill Station Bundle"
+        }
+      ],
+      "golden_concepts": [
+        {
+          "headline": "Bamboo kitchen in action",
+          "rationale": "Directly features Bamboo Kitchen Set product while showcasing 'Sustainable Living' with warm, lived-in kitchen scenes that resonate with audience",
+          "prompt": "Create a warm, lifestyle social media image of a person using bamboo kitchen utensils and storage in a bright, natural kitchen. Wood countertops, white or cream walls. Soft daylight from a window. Show the person reaching for or organizing items in bamboo containers. Fresh herbs, bread, or food nearby. The scene feels homey and real, not styled. Earth tones dominate. Include details: texture of bamboo, natural grain, warm wood tones. Convey both sustainability and beauty. No text overlay.",
+          "content_pillar": "Product Stories",
+          "product": "Bamboo Kitchen Set"
+        },
+        {
+          "headline": "Bedroom sanctuary: linen luxury",
+          "rationale": "Highlights Linen Bedding product and 'Home Inspiration' pillar; shows aspirational comfort without sterility",
+          "prompt": "Create an inviting social media image of a serene bedroom with organic linen bedding in soft cream or sage tones. Warm, diffused morning light. A person is sitting on the bed or stretching, looking peaceful. Minimal decor: potted plants, simple wooden nightstand, perhaps an open window showing nature. The linens show natural wrinkles and texture, not perfect smoothness. Soft, warm color palette. Conveys comfort, sustainability, and personal sanctuary. No text overlay.",
+          "content_pillar": "Home Inspiration",
+          "product": "Linen Bedding"
+        },
+        {
+          "headline": "Bulk refill ritual moment",
+          "rationale": "Educates on 'Sustainable Living' with Refill Station Bundle; shows practical zero-waste action in relatable context",
+          "prompt": "Create a detailed social media image of someone at home refilling personal care or household products from glass containers into smaller bottles. Natural lighting, warm tones. Show the Refill Station Bundle prominently: glass containers of various sizes, neatly organized on a shelf or counter. Natural wood shelving, minimal decor. Hands engaged in the refilling process. Convey the ease and beauty of zero-waste living. Warm, organic color palette with greens and creams. Textured details (glass, wood). No text overlay.",
+          "content_pillar": "Sustainable Living",
+          "product": "Refill Station Bundle"
+        }
+      ],
+      "concept_scores": [
+        {
+          "index": 0,
+          "overall": 0.7362500000000001,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.73125,
+          "brand_faithfulness": 0.44999999999999996,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Specificity: 38%, 105 words | Brand: References pillar 'Product Stories' but doesn't use it in prompt; Uses avoided words: green"
+        },
+        {
+          "index": 1,
+          "overall": 0.7737499999999999,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.81875,
+          "brand_faithfulness": 0.5499999999999999,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Specificity: 62%, 108 words | Brand: References pillar 'Home Inspiration' but doesn't use it in prompt"
+        },
+        {
+          "index": 2,
+          "overall": 0.6599999999999999,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.3,
+          "brand_faithfulness": 0.5,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Contains non-image-generation requests (text, lists, explanations) | Brand: Uses avoided words: green; Uses visual elements brand wants to avoid"
+        }
+      ]
+    },
+    {
+      "brand_id": "test-003-beauty",
+      "brand_name": "GlowNature",
+      "overall_score": 0.7304999999999999,
+      "set_quality_avg": 0.6924999999999999,
+      "diversity_score": 1.0,
+      "approval_alignment": 0.575,
+      "summary": "Quality: 69% | Diversity: 100% | Approval align: 57%\nDiversity: Good diversity across concepts\nApproval: Aligns with 1/2 approval themes; May repeat rejection theme: too perfect, unrealistic, makes people feel bad",
+      "generated_concepts": [
+        {
+          "headline": "The Overnight Ritual: Skin That Drinks Deep",
+          "rationale": "Reviewers approved dewy glow close-ups and product application shots, so this concept leans into that proven territory while spotlighting a specific ritual moment. It reinforces the Skincare Rituals pillar and the Rose Hydration Mask without veering into unrealistic transformation imagery that was previously rejected.",
+          "prompt": "A close-up, softly lit photo of a woman's hands applying a rose-petal-flecked pink mask to her bare shoulder and collarbone in warm golden-hour light. Her skin shows natural texture, pores, and a few freckles, glistening with dewy hydration rather than glossy filter shine. Background is a softly blurred bathroom vanity with a small jar of Rose Hydration Mask, a linen towel, and a single stem of dried rose. Color palette leans into blush pink, warm gold, and cream tones. Composition is intimate and calm, evoking a nightly self-care ritual. No heavy makeup, no artificial glow, authentic and diverse skin tone representation, soft diffused natural light.",
+          "content_pillar": "Skincare Rituals",
+          "product": "Rose Hydration Mask"
+        },
+        {
+          "headline": "What's Really Inside: Vitamin C, Straight From Nature",
+          "rationale": "This concept supports the Clean Ingredients pillar and reinforces the brand's honesty and expert voice without using banned words like 'chemical' or 'toxin-free.' It builds trust through transparency, aligning with the brand's dislike of synthetic looks and love of botanical ingredients, while giving the Golden Serum tangible visual proof.",
+          "prompt": "An elegant flat-lay on a marble surface featuring the Golden Serum bottle standing upright, surrounded by fresh botanical ingredients: sliced citrus fruits, golden turmeric root, rosehips, and green leaves scattered naturally, with a few water droplets on the petals. Warm golden light streams diagonally across the frame creating soft shadows. A small handwritten card nearby reads 'Vitamin C + Botanicals.' Color palette follows brand gold, rose, and cream tones against a muted stone backdrop. Styling is clean, uncluttered, and editorial rather than staged-perfect, with a slightly imperfect, organic arrangement of ingredients to feel authentic and honest rather than overly polished.",
+          "content_pillar": "Clean Ingredients",
+          "product": "Golden Serum"
+        },
+        {
+          "headline": "Real Glow, Real Her: One Morning, No Filters",
+          "rationale": "Directly informed by the rejection of the 'too perfect, unrealistic' before/after concept, this reframes Skin Stories around an authentic, single-moment portrait rather than a comparison. It leans into what was approved (dewy glow close-up) while celebrating diverse skin tones and real texture, keeping tone confident and honest.",
+          "prompt": "A natural, candid close-up portrait of a woman in her 30s with visible skin texture, light under-eye circles, and a genuine soft smile, caught in warm morning light streaming through a window. Her skin looks dewy and healthy, not airbrushed, with realistic highlights along the cheekbones and nose. She has a diverse skin tone, minimal makeup, and hair loosely tied back. She holds a small glass bottle of Golden Serum near her collarbone, not posed, as if just finishing her routine. Background is a softly blurred bedroom with linen curtains and a hint of greenery. Palette in warm gold, blush, and neutral tones, evoking honesty and quiet confidence.",
+          "content_pillar": "Skin Stories",
+          "product": "Golden Serum"
+        }
+      ],
+      "golden_concepts": [
+        {
+          "headline": "Glow ritual: morning refresh",
+          "rationale": "Showcases 'Skincare Rituals' with relatable morning routine; emphasizes natural glow over perfection",
+          "prompt": "Create a luxe yet natural social media image of a morning skincare routine. A person's hands applying serum or moisturizer to their glowing face. Soft, golden morning light. Minimal bathroom setting with white or soft neutral tones. Perhaps show the Golden Serum bottle nearby, with botanical elements (rose petals, leaves). The person's skin looks dewy and fresh, with subtle texture and reality (not airbrushed). Golden hour lighting that emphasizes natural glow. Luxe but achievable. No heavy makeup. No text overlay.",
+          "content_pillar": "Skincare Rituals",
+          "product": "Golden Serum"
+        },
+        {
+          "headline": "Botanical beauty: rose essence",
+          "rationale": "Educates on 'Clean Ingredients' through product story; visual emphasis on natural rose ingredient",
+          "prompt": "Create an artistic social media image featuring the Rose Hydration Mask product with fresh rose petals, botanical elements. Show a close-up of the luxe product container with visible rose petals and natural ingredients. Perhaps a person applying it at night or holding the jar. Soft, diffused lighting with golden and rose tones. Include texture details: petals, glass container, product consistency. Luxe but natural aesthetic. Clean background with soft colors. Conveys both efficacy and natural beauty. No text overlay.",
+          "content_pillar": "Clean Ingredients",
+          "product": "Rose Hydration Mask"
+        },
+        {
+          "headline": "Real skin radiance journey",
+          "rationale": "Captures 'Skin Stories' with realistic transformation that inspires without setting unrealistic beauty standards",
+          "prompt": "Create an honest social media image showing a person's skin before and after using the Starter Set, but with reality and natural lighting. Show the subtle improvements: clearer complexion, more radiant skin tone, healthier texture. Use consistent lighting for both images so comparison is fair and realistic. The person looks confident but natural, not airbrushed. Perhaps show them holding or displaying the Starter Set. Warm, honest lighting. Diverse skin tone representation. Focus on skin health, not perfection. No text overlay.",
+          "content_pillar": "Skin Stories",
+          "product": "Starter Set"
+        }
+      ],
+      "concept_scores": [
+        {
+          "index": 0,
+          "overall": 0.6599999999999999,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.3,
+          "brand_faithfulness": 0.5,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Contains non-image-generation requests (text, lists, explanations) | Brand: Uses visual elements brand wants to avoid; Describes photography that conflicts with brand style"
+        },
+        {
+          "index": 1,
+          "overall": 0.7375,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.6875,
+          "brand_faithfulness": 0.49999999999999994,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Specificity: 25%, 100 words | Brand: Uses avoided words: chemical, toxin-free"
+        },
+        {
+          "index": 2,
+          "overall": 0.6799999999999999,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.3,
+          "brand_faithfulness": 0.6,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Contains non-image-generation requests (text, lists, explanations) | Brand: Uses visual elements brand wants to avoid"
+        }
+      ]
+    },
+    {
+      "brand_id": "test-004-food",
+      "brand_name": "NourishBowl",
+      "overall_score": 0.7374166666666667,
+      "set_quality_avg": 0.6845833333333333,
+      "diversity_score": 0.9833333333333334,
+      "approval_alignment": 0.6499999999999999,
+      "summary": "Quality: 68% | Diversity: 98% | Approval align: 65%\nDiversity: Good diversity across concepts\nApproval: Aligns with 2/2 approval themes; May repeat rejection theme: tone-deaf, diet culture messaging not our brand",
+      "generated_concepts": [
+        {
+          "headline": "Bangkok Street Market, Straight to Your Bowl",
+          "rationale": "Leans into the approved 'vibrant Buddha bowl' success and the brand's love of diverse, cultural cuisines while showcasing the Asian Fusion Collection. High creativity setting lets us explore a specific origin-story angle rather than a generic bowl shot, expanding content diversity beyond recent posts.",
+          "prompt": "Overhead shot of a vibrant Thai-inspired NourishBowl on a rustic wooden table, bathed in bright natural sunlight streaming from the left. The bowl features charred lemongrass chicken, purple cabbage slaw, shredded carrots, fresh Thai basil, crushed peanuts, and a glossy peanut-lime drizzle. Small side bowls of chili flakes, lime wedges, and fresh cilantro surround the main dish, evoking a Bangkok street market stall. A pair of human hands reaches in with chopsticks lifting a bite, showing real texture and steam. Colors pop against a teal linen napkin (#4ECDC4) and an orange ceramic plate edge (#FF6B35). Authentic, appetizing, no fake garnishes, true-to-life styling.",
+          "content_pillar": "Flavor Stories",
+          "product": "Asian Fusion Collection"
+        },
+        {
+          "headline": "Lunch Break, Actually Enjoyed",
+          "rationale": "Directly follows the approved 'Unboxing nourish experience' note about showing real delivery moments, while pushing into new territory by depicting a genuine workplace scenario for busy professionals \u2014 our core audience \u2014 rather than another home flat-lay. Avoids all diet-culture language and keeps the mood joyful, not restrictive.",
+          "prompt": "Candid photo inside a sunlit modern office break room. A smiling professional in business-casual attire sits at a wooden table, mid-laugh, opening a NourishBowl delivery box with the orange and teal branded packaging visible. One hand holds an open bowl revealing colorful roasted vegetables, quinoa, grilled salmon, and avocado; the other holds a fork mid-bite. A laptop, phone, and coffee cup sit nearby, subtly showing the convenience angle. Bright natural window light, warm and energetic mood, genuine unposed expression. Background softly blurred with hints of teal chair upholstery. Real, unfiltered, appetizing food styling with no fake garnishes\u2014authentic workplace nourishment moment.",
+          "content_pillar": "Real People, Real Meals",
+          "product": "Weekly Subscription"
+        },
+        {
+          "headline": "Your Macros, Beautifully Broken Down",
+          "rationale": "Fulfills the Nutrition Transparency pillar with an experimental flat-lay format that visually maps macros using real ingredients instead of clinical charts, satisfying high creativity while staying brand-consistent. Explicitly avoids clinical/diet-culture tone words and the rejected green-juice aesthetic, favoring colorful whole foods over sterile health imagery.",
+          "prompt": "Bright overhead flat-lay on a white marble surface showing a Macro-Flex Meals build laid out in three color-coded ingredient clusters: a vibrant pile of grilled chicken and chickpeas (protein) on one side, a colorful mound of roasted sweet potatoes and brown rice (carbs) in the center, and a rainbow arrangement of avocado slices, olive oil drizzle, and almonds (fats) on the other side. Small handwritten kraft-paper labels with macro grams sit beside each cluster. Natural window light creates soft shadows, fresh herbs scattered for color accents in teal and yellow tones. Hands are optionally visible placing a final avocado slice. Realistic, appetizing, no clinical or sterile styling, true food texture throughout.",
+          "content_pillar": "Nutrition Transparency",
+          "product": "Macro-Flex Meals"
+        }
+      ],
+      "golden_concepts": [
+        {
+          "headline": "Rainbow bowl unveiling",
+          "rationale": "Showcases 'Flavor Stories' with vibrant, appetite-inducing imagery; emphasizes variety and real enjoyment",
+          "prompt": "Create a mouth-watering social media image of a colorful, ingredient-diverse NourishBowl. Overhead angle showing the complete meal: colorful vegetables, proteins, grains, sauces in different sections. Bright, natural sunlight creating shadows and depth. A person's hands holding or about to eat the bowl. Show real food textures and colors: reds, greens, oranges, yellows. Perhaps include a spoon or the person's face enjoying the meal. Vibrant, appetizing, but realistic. Clean white background or natural setting. No artificial garnishes. No text overlay.",
+          "content_pillar": "Flavor Stories",
+          "product": "Weekly Subscription"
+        },
+        {
+          "headline": "Macro transparency: your custom bowl",
+          "rationale": "Educates on 'Nutrition Transparency' with clear ingredient and nutritional focus; builds trust",
+          "prompt": "Create an informative yet appetizing social media image showing the Macro-Flex meal customization. Display a bowl with clearly visible different ingredient categories (proteins, vegetables, grains, healthy fats) possibly with subtle labels or organized sections. Include a macro breakdown graphic or nutrition info subtly integrated. Bright, clear lighting. Show both the final meal and perhaps the ingredients separately. Convey customization and transparency. Vibrant colors of actual ingredients. Professional but accessible. No text overlay on the food itself.",
+          "content_pillar": "Nutrition Transparency",
+          "product": "Macro-Flex Meals"
+        },
+        {
+          "headline": "Lunchtime joy: real person, real meal",
+          "rationale": "Features 'Real People, Real Meals' pillar; shows authentic enjoyment and relatability without forced enthusiasm",
+          "prompt": "Create a candid social media image of a real person enjoying their NourishBowl meal at home or office during lunchtime. Natural, unposed moment. They're eating, looking satisfied, perhaps at a desk with a drink nearby. The meal is the Macro-Flex or Asian Fusion Collection, colorful and appealing. Bright natural lighting. Show real eating moment, not a fake smile. Conveys nourishment, convenience, and genuine enjoyment. Diverse representation possible. Background feels real (office desk, home kitchen). No text overlay.",
+          "content_pillar": "Real People, Real Meals",
+          "product": "Asian Fusion Collection"
+        }
+      ],
+      "concept_scores": [
+        {
+          "index": 0,
+          "overall": 0.7075,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.6875,
+          "brand_faithfulness": 0.35,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Specificity: 25%, 102 words | Brand: References pillar 'Flavor Stories' but doesn't use it in prompt; Uses visual elements brand wants to avoid; Describes photography that conflicts with brand style"
+        },
+        {
+          "index": 1,
+          "overall": 0.66625,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.73125,
+          "brand_faithfulness": 0.09999999999999992,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Specificity: 38%, 100 words | Brand: References pillar 'Real People, Real Meals' but doesn't use it in prompt; References product 'Weekly Subscription' but doesn't use it in prompt; Uses avoided words: diet; Uses visual elements brand wants to avoid; Describes photography that conflicts with brand style"
+        },
+        {
+          "index": 2,
+          "overall": 0.6799999999999999,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.3,
+          "brand_faithfulness": 0.6,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Contains non-image-generation requests (text, lists, explanations) | Brand: Uses avoided words: diet"
+        }
+      ]
+    },
+    {
+      "brand_id": "test-005-fashion",
+      "brand_name": "EthicalThreads",
+      "overall_score": 0.76225,
+      "set_quality_avg": 0.7204166666666666,
+      "diversity_score": 1.0,
+      "approval_alignment": 0.6499999999999999,
+      "summary": "Quality: 72% | Diversity: 100% | Approval align: 65%\nDiversity: Good diversity across concepts\nApproval: Aligns with 2/2 approval themes; May repeat rejection theme: too posed, doesn't feel authentic to our brand",
+      "generated_concepts": [
+        {
+          "headline": "From Cotton to Craft: Meet the Hands Behind Your Denim",
+          "rationale": "Reviewers explicitly approved artisan/production content for building trust through transparency ('Transparency builds trust'), and this leans directly into that success while spotlighting Fair-Trade Denim's traceable supply chain. It avoids vague sustainability buzzwords by showing concrete process instead of claims, matching the brand's honest, no-greenwashing tone.",
+          "prompt": "Documentary-style photograph inside a small Berlin garment workshop, natural window light streaming across worn wooden work tables. A middle-aged artisan with weathered, skilled hands guides raw indigo denim fabric through an industrial sewing machine, mid-motion, unposed. Focus is tight on hands, fabric texture, and thread details, with soft background blur showing rolls of denim and hanging garments. Muted neutral palette\u2014charcoal, stone grey, off-white\u2014with one small red thread spool as an accent color pop. No excessive styling, no models posing for camera; authentic candid documentary feel. Shot with shallow depth of field, natural color grading, minimal composition, uncluttered background, evoking quiet craftsmanship and transparency in production.",
+          "content_pillar": "Behind the Seams",
+          "product": "Fair-Trade Denim"
+        },
+        {
+          "headline": "Real Bodies, Real Denim, Real Fit",
+          "rationale": "This directly builds on the approved 'Denim on real bodies' concept, which reviewers praised as diverse and authentic, while pointedly avoiding the rejected feedback about overly posed basics content. It pushes content diversity by featuring a group scene rather than a solo studio shot, reinforcing inclusivity and the brand's stance against unrealistic body standards.",
+          "prompt": "Candid outdoor photograph on a Berlin street corner, overcast natural daylight. Five people of varying ages (20s to 60s), body types, and skin tones stand and walk casually together, each wearing Fair-Trade Denim jeans in different washes. Poses are relaxed and natural\u2014laughing mid-conversation, adjusting a cuff, walking mid-stride\u2014not staged for camera. Framing highlights denim fit and fabric drape across different body shapes. Background is an uncluttered minimal urban street with muted concrete tones and soft greenery. Color palette stays neutral\u2014slate blue denim, grey pavement, white and charcoal clothing\u2014with no neon or exclusivity styling. Authentic fashion photography aesthetic, true-to-life skin tones, minimal retouching, genuine emotion.",
+          "content_pillar": "Community & Diversity",
+          "product": "Fair-Trade Denim"
+        },
+        {
+          "headline": "One Capsule, Five Looks, Zero Overthinking",
+          "rationale": "Serves the Styling Tips pillar and Wardrobe Building Set product, an area not recently covered in approval history, satisfying the brand's high content-diversity setting while staying visually consistent with minimalist, neutral styling guidelines. It emphasizes longevity and versatility over trend-driven fast-fashion messaging, aligning with the anti-fast-fashion audience values.",
+          "prompt": "Clean, minimal flat-lay photograph on a light stone-grey surface, soft diffused overhead lighting. Five garments from a capsule wardrobe set\u2014an organic cotton tee, a button shirt, straight-leg trousers, a knit sweater, and a simple dress\u2014are arranged in three overlapping styled combinations across the frame, showing how pieces mix and layer. Palette is neutral: off-white, charcoal, soft grey, with one garment featuring a small red accent detail. Composition is uncluttered with generous negative space, folded edges crisp, fabric textures visible in natural detail. No models, no logos, no excessive props\u2014just garments, subtle shadow, and thoughtful arrangement conveying versatility, quality fabric, and timeless minimalist styling.",
+          "content_pillar": "Styling Tips",
+          "product": "Wardrobe Building Set"
+        }
+      ],
+      "golden_concepts": [
+        {
+          "headline": "Fair-Trade Denim: from source to wearer",
+          "rationale": "Showcases 'Behind the Seams' pillar with transparency that builds trust; human-focused production story",
+          "prompt": "Create a documentary-style social media image showing the Fair-Trade Denim journey. Could be split or sequential: artisans/workers in fair-trade facility hand-crafting denim, hands-on process, then a real person wearing the finished jeans in authentic pose (not model pose). Show actual denim fabric detail, stitching, quality. Mix of production and real-world wear. Natural, honest lighting. Include diverse people in production or wearing the jeans. Conveys ethics through authenticity, not just messaging. No text overlay.",
+          "content_pillar": "Behind the Seams",
+          "product": "Fair-Trade Denim"
+        },
+        {
+          "headline": "Organic cotton, infinite styling",
+          "rationale": "Features 'Styling Tips' pillar showing versatility of basics; promotes longevity mindset vs. fast fashion",
+          "prompt": "Create an inspirational social media image showing one Organic Cotton Essential (e.g., a basic tee or shirt) styled in 3-4 different ways: casual, office, night out, weekend wear. Show the same piece with different bottoms, accessories, layers. Real person modeling in authentic poses, not runway-style. Neutral colors dominating with pops of color from accessories. Show the quality and longevity of the piece through repeated styling. Natural lighting, minimal background. Conveys timeless, investment-piece thinking. No text overlay.",
+          "content_pillar": "Styling Tips",
+          "product": "Organic Cotton Essentials"
+        },
+        {
+          "headline": "Real people, real diversity, real wardrobes",
+          "rationale": "Highlights 'Community & Diversity' pillar with inclusive representation; shows wardrobes work for real people",
+          "prompt": "Create a diverse community-focused social media image featuring 2-3 people from different backgrounds, ages, body types wearing the Wardrobe Building Set basics together. Could be posed sitting or standing naturally (not model poses). Diverse skin tones, ages (18-60+), body types all represented. Show how the 5-piece capsule works for different people. Natural, honest poses and lighting. Minimal background, focus on the people and pieces. Conveys inclusion and belonging. Could show them styled differently. No text overlay.",
+          "content_pillar": "Community & Diversity",
+          "product": "Wardrobe Building Set"
+        }
+      ],
+      "concept_scores": [
+        {
+          "index": 0,
+          "overall": 0.73375,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.81875,
+          "brand_faithfulness": 0.35,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Specificity: 62%, 105 words | Brand: References pillar 'Behind the Seams' but doesn't use it in prompt; Uses avoided words: green; Uses visual elements brand wants to avoid"
+        },
+        {
+          "index": 1,
+          "overall": 0.7275,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.6875,
+          "brand_faithfulness": 0.44999999999999996,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Specificity: 25%, 104 words | Brand: References pillar 'Community & Diversity' but doesn't use it in prompt; Uses avoided words: green"
+        },
+        {
+          "index": 2,
+          "overall": 0.7,
+          "structural": 1.0,
+          "headline": 0.5,
+          "prompt": 0.3,
+          "brand_faithfulness": 0.7,
+          "rationale": 1.0,
+          "feedback": "Struct: All required fields present and sufficient length | Headline: Evaluation inconclusive | Prompt: Contains non-image-generation requests (text, lists, explanations) | Brand: Respects brand identity and guidelines"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "avg_overall_score": 0.7542,
+    "avg_quality": 0.7153333333333333,
+    "avg_diversity": 0.99,
+    "avg_approval_alignment": 0.635,
+    "successful_tests": 5,
+    "failed_tests": 0
+  }
+}

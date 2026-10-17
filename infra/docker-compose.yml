@@ -1,0 +1,64 @@
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build:
+      context: ../apps/api
+    env_file:
+      - ../.env
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-postgresql+asyncpg://postgres:postgres@host.docker.internal:54322/postgres}
+      REDIS_URL: redis://redis:6379
+      API_CORS_ORIGINS: http://localhost:3000
+    ports:
+      - "8000:8000"
+    depends_on:
+      redis:
+        condition: service_healthy
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  worker:
+    build:
+      context: ../apps/orchestrator
+    env_file:
+      - ../.env
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-postgresql+asyncpg://postgres:postgres@host.docker.internal:54322/postgres}
+      REDIS_URL: redis://redis:6379
+      IMAGE_PROVIDER: ${IMAGE_PROVIDER:-stub}
+    command: ["python", "-m", "orchestrator.worker"]
+    depends_on:
+      redis:
+        condition: service_healthy
+      api:
+        condition: service_started
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  scheduler:
+    build:
+      context: ../apps/orchestrator
+    env_file:
+      - ../.env
+    environment:
+      API_BASE_URL: http://api:8000
+      INTERNAL_JOB_SECRET: ${INTERNAL_JOB_SECRET:-change-me-internal-cron-secret}
+      SCHEDULER_INTERVAL_SECONDS: ${SCHEDULER_INTERVAL_SECONDS:-60}
+    command: ["python", "-m", "orchestrator.scheduler"]
+    depends_on:
+      - api
+      - worker
+
+volumes:
+  redis_data:

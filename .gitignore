@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+.env.local
+.env.*.local
+
+# Build
+.next/
+out/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage/
+htmlcov/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Supabase
+infra/supabase/.branches
+infra/supabase/.temp
+
+# Misc
+*.log
+.turbo/
+.cache/
+tmp/
+temp/
+uploads/
+.claude/
+.cursor/
